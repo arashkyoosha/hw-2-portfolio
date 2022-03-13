@@ -7,41 +7,46 @@ html {
   box-sizing: border-box;
 }
 
+header {
+  padding: 2px;
+  text-align: center;
+  color: white;
+}
+
 nav {
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 1;
   display: flex;
-  align-items: center;
+  background-color: #222c38;
   justify-content: space-between;
-  padding: 1.5rem 3.5rem;
-  background-color: #cac5dbf1;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  align-items: center;
+
 }
 
-nav h1 {
-  color: #4756df;
-}
-
-nav a {
-  color: #4756df;
-  transition: 0.3s;
-  text-decoration: none;
-}
-nav a:hover {
-  color: #ff7235;
-  border-bottom: 2px solid #ff7235;
+nav li {
+  float: left;
 }
 
 nav ul {
-  display: flex;
-  gap: 1.9rem;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-nav ul li {
-  font-weight: 700;
+nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .hero {
@@ -50,6 +55,7 @@ nav ul li {
   background-size: cover;
   background-position: center;
   position: relative;
+  padding: 2px;
 }
 
 .hero h1 {
@@ -57,55 +63,49 @@ nav ul li {
   bottom: 8px;
   right: 16px;
   font-size: 18px;
-}
-
-.about {
-  float: right;
-  width: 65%;
-  margin: 30px;
-  background-color: rgb(128, 148, 185);
-  line-height: 2;
-  text-align: center;
-  padding: 50px;
-  word-wrap: break-word;
+  color: rgb(131, 19, 146);
+  background-color: black;
+  padding: 5px;
 }
 
 .about-me {
-  position: absolute;
-  margin: 15px 200px;
+  flex: 1;
+  border-right: 2px solid black;
+  padding: 20px;
 }
 
-/*
-.projects {
-  float: right;
+.about {
+  flex: 3;
+  background-color: #fff;
+  padding: 20px;
+}
 
+.projects {
+  flex: 3;
+  background-color: #fff;
+  padding: 20px;
 }
 
 .my-projects {
-  float: left;
-  border-right: 5px solid black;
+  flex: 1;
+  background-color: #b9c6ae;
+  padding: 20px;
 }
 
-.projects img {
+img {
   width: 200px;
-  height: 60px;
 }
 
-.footer {
-  float: left;
-  border-right: 5px solid black;
-} */
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
   }
-}
 
-/* @media screen and (max-width: 570px) {
   .about-me {
-    position: absolute;
-    margin: 15px 200px;
+    flex: 1;
+    border-bottom: 2px solid black;
+    border-right: none;
+    padding: 20px;
   }
-} */
+}
