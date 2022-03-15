@@ -7,6 +7,10 @@ html {
   box-sizing: border-box;
 }
 
+/* body {
+    background-color:slategrey
+} */
+
 header {
   padding: 2px;
   text-align: center;
@@ -18,7 +22,7 @@ nav {
   background-color: #222c38;
   justify-content: space-between;
   align-items: center;
-
+  padding: 10px;
 }
 
 nav li {
@@ -44,9 +48,10 @@ nav li a:hover {
   background-color: #111;
 }
 
-main {
-  display: flex;
-  flex-wrap: wrap;
+nav img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
 }
 
 .hero {
@@ -56,6 +61,7 @@ main {
   background-position: center;
   position: relative;
   padding: 2px;
+  margin: 2px;
 }
 
 .hero h1 {
@@ -65,47 +71,98 @@ main {
   font-size: 18px;
   color: rgb(131, 19, 146);
   background-color: black;
+  align-items: center;
   padding: 5px;
+  margin: 0 35px;
+}
+
+.container-1 {
+  display: flex;
+  align-items: center;
+}
+
+.container-1 section {
+  padding: 10px;
+  margin: 10px;
 }
 
 .about-me {
   flex: 1;
-  border-right: 2px solid black;
-  padding: 20px;
+  border-right: 2px solid #ccc;
 }
 
 .about {
   flex: 3;
-  background-color: #fff;
-  padding: 20px;
 }
 
-.projects {
-  flex: 3;
-  background-color: #fff;
-  padding: 20px;
+
+
+.container-2 {
+  display: flex;
+  align-items: center;
+}
+
+.container-2 section {
+  padding: 10px;
+  margin: 10px;
+}
+
+.container-2 img {
+  width: 200px;
 }
 
 .my-projects {
   flex: 1;
-  background-color: #b9c6ae;
-  padding: 20px;
+  border-right: 2px solid #ccc;
 }
 
-img {
-  width: 200px;
+.projects {
+  flex: 3;
 }
+
+.container-3 {
+  display: flex;
+  align-items: center;
+}
+
+.container-3 section {
+  padding: 10px;
+  margin: 10px;
+}
+
+.container-3 ul {
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container-3 li {
+    float: left;
+}
+
+.contact-me {
+  flex: 1;
+  border-right: 2px solid #ccc;
+}
+
+.contact {
+  flex: 3;
+}
+
+
+
+
+
 
 @media screen and (max-width: 768px) {
-  main,
   nav {
     flex-direction: column;
   }
+}
 
-  .about-me {
-    flex: 1;
-    border-bottom: 2px solid black;
-    border-right: none;
-    padding: 20px;
+@media screen and (max-width: 393) {
+  nav {
+    flex-direction: column;
   }
 }
