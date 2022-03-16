@@ -8,7 +8,7 @@ html {
 }
 
 /* body {
-    background-color:slategrey
+    background-color:rgb(109, 108, 110)
 } */
 
 header {
@@ -18,7 +18,7 @@ header {
 }
 
 nav {
-  display: flex;
+  display:flex;
   background-color: #222c38;
   justify-content: space-between;
   align-items: center;
@@ -79,6 +79,8 @@ nav img {
 .container-1 {
   display: flex;
   align-items: center;
+  padding: 10px;
+  margin: 10px;
 }
 
 .container-1 section {
@@ -89,6 +91,7 @@ nav img {
 .about-me {
   flex: 1;
   border-right: 2px solid #ccc;
+  color: rgb(45, 42, 221);
 }
 
 .about {
@@ -96,10 +99,11 @@ nav img {
 }
 
 
-
 .container-2 {
   display: flex;
   align-items: center;
+  padding: 10px;
+  margin: 10px;
 }
 
 .container-2 section {
@@ -108,21 +112,25 @@ nav img {
 }
 
 .container-2 img {
-  width: 200px;
+  width: 300px;
 }
 
 .my-projects {
   flex: 1;
   border-right: 2px solid #ccc;
+  color: rgb(45, 42, 221);
 }
 
 .projects {
   flex: 3;
+
 }
 
 .container-3 {
   display: flex;
   align-items: center;
+  padding: 10px;
+  margin: 10px;
 }
 
 .container-3 section {
@@ -130,27 +138,24 @@ nav img {
   margin: 10px;
 }
 
-.container-3 ul {
-    list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-.container-3 li {
-    float: left;
-}
-
 .contact-me {
   flex: 1;
   border-right: 2px solid #ccc;
+  color: rgb(45, 42, 221);
 }
 
 .contact {
   flex: 3;
 }
 
-
+.large-image {
+  display: block;
+  border: 8px groove rgb(32, 104, 211);
+  border-radius: 15px;
+  opacity: 1;
+  padding: 5px;
+  margin: 10px;
+}
 
 
 
