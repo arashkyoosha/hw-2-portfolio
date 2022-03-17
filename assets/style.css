@@ -1,3 +1,4 @@
+/* Root selectors */
 :root {
   --white: white;
   --light: #ccc;
@@ -24,6 +25,7 @@ header {
   color: var(--white);
 }
 
+/* Navigation bar  */
 nav {
   display:flex;
   background-color: #222c38;
@@ -61,6 +63,8 @@ nav img {
   height: 60px;
 }
 
+
+/* Hero image */
 .hero {
   background-image: url("./images/hero.jpg");
   height: 100px;
@@ -83,6 +87,7 @@ nav img {
   margin: 0 35px;
 }
 
+/* About me section */
 .container-1 {
   display: flex;
   align-items: center;
@@ -106,7 +111,7 @@ nav img {
   flex: 3;
 }
 
-
+/* Projects section */
 .container-2 {
   display: flex;
   align-items: center;
@@ -143,6 +148,7 @@ nav img {
   width:50%
 }
 
+/* Contact me section */
 .container-3 {
   display: flex;
   align-items: center;
@@ -195,7 +201,7 @@ nav img {
 }
 
 
-
+/* Media queries */
 @media screen and (max-width: 768px) {
   nav {
     flex-direction: column;
