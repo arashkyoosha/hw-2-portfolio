@@ -1,3 +1,10 @@
+:root {
+  --white: white;
+  --light: #ccc;
+  --dark: rgb(45, 42, 221);
+
+}
+
 * {
   font-family: "Roboto", sans-serf;
 }
@@ -14,7 +21,7 @@ html {
 header {
   padding: 2px;
   text-align: center;
-  color: white;
+  color: var(--white);
 }
 
 nav {
@@ -38,7 +45,7 @@ nav ul {
 
 nav a {
   display: block;
-  color: white;
+  color: var(--white);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -91,8 +98,8 @@ nav img {
 
 .about-me {
   flex: 1;
-  border-right: 2px solid #ccc;
-  color: rgb(45, 42, 221);
+  border-right: 2px solid var(--light);
+  color: var(--dark);
 }
 
 .about {
@@ -119,8 +126,8 @@ nav img {
 
 .my-projects {
   flex: 1;
-  border-right: 2px solid #ccc;
-  color: rgb(45, 42, 221);
+  border-right: 2px solid var(--light);
+  color: var(--dark);
 }
 
 .projects {
@@ -152,15 +159,15 @@ nav img {
 
 .contact-me {
   flex: 1;
-  border-right: 2px solid #ccc;
-  color: rgb(45, 42, 221);
+  border-right: 2px solid var(--light);
+  color: var(--dark);
 }
 
 .contact {
   flex: 3;
 }
 
-/* .large-image {
+/* .large {
   display: block;
   border: 8px groove rgb(32, 104, 211);
   border-radius: 15px;
@@ -172,7 +179,7 @@ nav img {
 .container-3 a {
   float: left;
   font-size: 16px;
-  color: white;
+  color: var(--white);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -184,7 +191,7 @@ nav img {
 
 .container-3 a:hover {
   background-color: #2196F3;
-  color: white;
+  color: var(--white);
 }
 
 
