@@ -79,6 +79,7 @@ nav img {
 .container-1 {
   display: flex;
   align-items: center;
+  background-color: #98dbbf;
   padding: 10px;
   margin: 10px;
 }
@@ -102,6 +103,7 @@ nav img {
 .container-2 {
   display: flex;
   align-items: center;
+  background-color: #93b7d4;
   padding: 10px;
   margin: 10px;
 }
@@ -123,7 +125,15 @@ nav img {
 
 .projects {
   flex: 3;
+}
 
+.cards {
+  flex: 25%;
+  padding: 5px;
+}
+
+.cards img {
+  width:50%
 }
 
 .container-3 {
@@ -131,6 +141,8 @@ nav img {
   align-items: center;
   padding: 10px;
   margin: 10px;
+  overflow: hidden;
+  background-color: rgb(172, 135, 135);
 }
 
 .container-3 section {
@@ -148,15 +160,32 @@ nav img {
   flex: 3;
 }
 
-.large-image {
+/* .large-image {
   display: block;
   border: 8px groove rgb(32, 104, 211);
   border-radius: 15px;
   opacity: 1;
   padding: 5px;
   margin: 10px;
+} */
+
+.container-3 a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
+.container-3 ul {
+   list-style-type: none;
+}
+
+.container-3 a:hover {
+  background-color: #2196F3;
+  color: white;
+}
 
 
 
