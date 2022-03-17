@@ -9,5 +9,5 @@ Live link:
 
 Screenshots:
 
-![Top part](./assets/screenshots/screenshot1.png)
-![Bottom part](./assets/screenshots/screenshot2.png)
+![Top part](./assets/images/screenshot1.png)
+![Bottom part](./assets/images/screenshot2.png)
