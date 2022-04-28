@@ -13,8 +13,6 @@ Screenshots:
 
 ******************************************************************************************************
 
-# hw-2-portfolio
-
 This is a web portfolio made using HTML and CSS
 It uses flexbox to have a responsive design
 
