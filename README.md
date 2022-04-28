@@ -9,7 +9,8 @@ Live link:
 
 Screenshots:
 
-![Mobile](./assets/images/screenshot.png)
+![top](./assets/images/screenshot.png)
+![bottom](./assets/images/sec-screenshot.png)
 
 ******************************************************************************************************
 
