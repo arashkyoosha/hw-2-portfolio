@@ -1,3 +1,18 @@
+# Updated portfolio
+
+This is the updated portfolio using the same technologies as before
+and added bootstrap. Also, the most recent project and homework assignments added.
+
+Live link:
+
+<https://arashkyoosha.github.io/hw-2-portfolio/>
+
+Screenshots:
+
+![Mobile](./assets/images/screenshot.png)
+
+******************************************************************************************************
+
 # hw-2-portfolio
 
 This is a web portfolio made using HTML and CSS
