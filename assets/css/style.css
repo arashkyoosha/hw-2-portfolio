@@ -8,6 +8,7 @@
 
 * {
   font-family: "Roboto", sans-serf;
+  /* justify-content: center; */
 }
 
 html {
@@ -15,9 +16,9 @@ html {
   box-sizing: border-box;
 }
 
-/* body {
-    background-color:rgb(109, 108, 110)
-} */
+body {
+    background-color:rgb(201, 190, 171)
+}
 
 header {
   padding: 2px;
@@ -115,38 +116,59 @@ nav img {
 .container-2 {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #93b7d4;
   padding: 10px;
   margin: 10px;
-}
-
-.container-2 section {
-  padding: 10px;
-  margin: 10px;
-}
-
-.container-2 img {
-  width: 300px;
 }
 
 .my-projects {
   flex: 1;
   border-right: 2px solid var(--light);
   color: var(--dark);
+  position: relative;
+  align-content: center;
+  width: 60%;
 }
 
-.projects {
-  flex: 3;
+.large {
+  opacity: 1;
+  display: flexbox;
+  width: 70%;
+  padding: 10px;
+  margin: 60px;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
 
-.cards {
-  flex: 25%;
-  padding: 5px;
+.header {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.cards img {
-  width:50%
+.text {
+  background-color: #100c41;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
 }
+
+.main-project:hover .large {
+  opacity: 0.3;
+}
+
+.main-project:hover .header {
+  opacity: 1;
+}
+
+
 
 /* Contact me section */
 .container-3 {
@@ -173,14 +195,6 @@ nav img {
   flex: 3;
 }
 
-/* .large {
-  display: block;
-  border: 8px groove rgb(32, 104, 211);
-  border-radius: 15px;
-  opacity: 1;
-  padding: 5px;
-  margin: 10px;
-} */
 
 .container-3 a {
   float: left;
@@ -211,5 +225,11 @@ nav img {
 @media screen and (max-width: 393) {
   nav {
     flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .large {
+    width: 100%;
   }
 }
